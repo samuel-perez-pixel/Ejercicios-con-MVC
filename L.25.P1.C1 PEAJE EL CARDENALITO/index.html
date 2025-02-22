@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section id="Vehiculoform">
+      <h3>Datos del cliente</h3>
+      <input type="text" id="Vehiculoform_inPlaca" placeholder="Placa"></input>
+      <input type="text" id="Vehiculoform_inTipo" placeholder="Tipo"></input>
+      
+      <button id="Vehiculoform_btProcesar">Procesar</button> 
+    </section>
+    <section id="mainForm">
+      <h3>Peaje el cardenalito</h3>
+      <table id="mainForm_tabla">
+        <tr>
+          <th></th>
+          <th>Porcentaje Particular</th>
+          <th>Porcentaje Transporte</th>
+          <th>Porcentaje Carga</th>
+          <th>Monto Municipal</th>
+          
+        </tr>
+      </table>
+      <div id="salida"></div>
+    </section>
+  </body>
+    <script type="module">
+      import Cl_principal from "./principal.js";
+      new Cl_principal()
+    </script>
+</html>
