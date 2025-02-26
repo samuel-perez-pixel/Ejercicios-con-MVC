@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section id="Asistenteform">
+      <h3>Datos del Asistente</h3>
+      <input type="text" id="Asistenteform_inCedula" placeholder="Cedula"></input>
+      <input type="text" id="Asistenteform_inTipo" placeholder="Tipo"></input>
+      <input type="text" id="Asistenteform_inEdad" placeholder="Edad"></input>
+      <button id="Asistenteform_btProcesar">Procesar</button> 
+    </section>
+    <section id="mainForm">
+      <h3>Taller Cloud </h3>
+      <table id="mainForm_tabla">
+        <tr>
+          <th></th>
+          <th>Grupo mas contensioso</th>
+          <th>Total Recabado</th>
+          <th>Impuesto Organizadores</th>
+          
+          
+        </tr>
+      </table>
+      <div id="salida"></div>
+    </section>
+  </body>
+    <script type="module">
+      import Cl_principal from "./principal.js";
+      new Cl_principal()
+    </script>
+</html>
