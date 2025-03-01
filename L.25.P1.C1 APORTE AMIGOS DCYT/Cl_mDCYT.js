@@ -7,7 +7,7 @@ export default class Cl_mDCYT {
         this.cntAmigobillete10=0;
         this.cntAmigobillete5=0;
         this.acumDia=0;
-        this.acumTotal=0;
+
     }
     procesarAmigo(a){
         //contar billetes
@@ -21,7 +21,7 @@ export default class Cl_mDCYT {
         return this.acumDia;
     }
     totalFinalTotal(){
-        return (this.cntAmigobillete5*5+this.cntAmigobillete10*10+this.cntAmigobillete20*20)+this.acumDia;
+        return (this.cntBilletes5*5+this.cntBilletes10*10+this.cntBilletes20*20)+this.acumDia;
     }
     porcentajeBilletes20(){
         return (this.cntAmigobillete20*100)/(this.cntAmigobillete5+this.cntAmigobillete10+this.cntAmigobillete20);
