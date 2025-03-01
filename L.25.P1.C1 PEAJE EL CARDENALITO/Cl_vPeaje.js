@@ -18,10 +18,9 @@ export default class Cl_vPeaje{
     }
     reportarVehiculo(porcentajeParticular,porcentajeTransporte,porcentajeCarga,montoMunicipal){
         this.tabla.innerHTML+=`<tr>
-        <td>${porcentajeParticular}</td>
-        <td>${porcentajeTransporte}</td>
-        <td>${porcentajeCarga}</td>
-        <td>${montoMunicipal}</td>
+        <td>El vehiculo es de la placa:${this.mVehiculo.placa}</td>
+        <td>Paga por tarifa:${this.mVehiculo.tarifaPagar()} BS</td>
+
         </tr>`;
         this.salida.innerHTML=`
         Porcentaje Particular: ${porcentajeParticular}%<br>
