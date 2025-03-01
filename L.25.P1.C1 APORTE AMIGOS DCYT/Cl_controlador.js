@@ -12,8 +12,8 @@ export default class Cl_controlador{
         );
     }
     iniciarDCYT(IniciaConBilletesde5,IniciaConBilletesde10,IniciaConBilletesde20){
-        this.modelo.IniciaConBilletesde5=IniciaConBilletesde5;
-        this.modelo.IniciaConBilletesde10=IniciaConBilletesde10;        
-        this.modelo.IniciaConBilletesde20=IniciaConBilletesde20;
+        this.modelo.cntBilletes5=IniciaConBilletesde5;
+        this.modelo.cntBilletes10=IniciaConBilletesde10;        
+        this.modelo.cntBilletes20=IniciaConBilletesde20;
     }
 }
