@@ -1,7 +1,7 @@
 import Cl_mVehiculo from "./Cl_mVehiculo.js";
 import Cl_vVehiculo from "./Cl_vVehiculo.js";
 
-export default class Cl_vPeaje{
+export default class Cl_vPeaje{ 
     constructor(){
         this.controlador=null;
         this.tabla=document.getElementById("mainForm_tabla");
