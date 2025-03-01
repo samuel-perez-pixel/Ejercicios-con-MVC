@@ -1,0 +1,19 @@
+export default class Cl_controlador{
+    constructor(modelo,vista){
+        this.modelo=modelo;
+        this.vista=vista;
+    }
+    procesarAmigo(){
+        this.modelo.procesarAmigo(this.vista.procesarAmigo());
+        this.vista.reportarAmigo(
+            this.modelo.totalFinalDia(),
+            this.modelo.totalFinalTotal(),
+            this.modelo.porcentajeBilletes20(),
+        );
+    }
+    iniciarDCYT(IniciaConBilletesde5,IniciaConBilletesde10,IniciaConBilletesde20){
+        this.modelo.IniciaConBilletesde5=IniciaConBilletesde5;
+        this.modelo.IniciaConBilletesde10=IniciaConBilletesde10;        
+        this.modelo.IniciaConBilletesde20=IniciaConBilletesde20;
+    }
+}

@@ -18,17 +18,17 @@ constructor(){
         });
         return this.mAsistente;
     }
-    reportarAsistente(cedula,montoPagar,impuestoOrganizadores){
+    reportarAsistente(grupoContensioso,totalRecabado,impuestoOrganizadores){
         this.tabla.innerHTML+=`<tr>
-        <td>${cedula}</td>
-        <td>${montoPagar}</td>
-        <td>${impuestoOrganizadores}</td>
+        <td>${this.mAsistente.cedula}</td>
+        <td>${this.mAsistente.montoPagar}</td>
+        
         
         </tr>`;
         this.salida.innerHTML=`
         El grupo mas numero es el de los: ${grupoContensioso}%<br>
         Total Recabado: ${totalRecabado}%<br>
-        impuestoOrganizadores: ${impuestoOrganizadores}%<br>
+        impuestoOrganizadores: ${impuestoOrganizadores()}%<br>
         
         `;
     }

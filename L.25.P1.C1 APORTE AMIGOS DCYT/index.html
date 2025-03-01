@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section id="Amigoform">
+      <h3>Datos del Amigo</h3>
+      <input type="text" id="Amigoform_inCedula" placeholder="Cedula"></input>
+      <input type="text" id="Amigoform_inBillete5" placeholder="Billetes de 5"></input>
+      <input type="text" id="Amigoform_inBillete10" placeholder="Billetes de 10"></input>
+      <input type="text" id="Amigoform_inBillete20" placeholder="Billetes de 20"></input>
+      <button id="Amigoform_btProcesar">Procesar</button> 
+    </section>
+    <section id="mainForm">
+      <h3>Info del DCYT</h3>
+      <label>Cant.de billetes de 5</label>
+      <input id="mainForm_IniciaConBilletesde5" placeholder="Inicial de billetes de 5"></input>
+      <label>Cant. de billetes de 10</label>
+      <input id="mainForm_IniciaConBilletesde10"placeholder="Inicial de billetes de 10"></input>
+      <label>Cant. de billetes de 20</label>
+      <input id="mainForm_IniciaConBilletesde20"placeholder="Inicial de billetes de 20"></input>
+      <button id="mainForm_btIniciar">Iniciar</button>
+      <table id="mainForm_tabla">
+        <tr>
+          <th>Cedula</th>
+          <th>Monto total</th>
+          <th>Total en el dia</th>
+          <th>Total con billetes anteriores</th>
+          <th>Porcentaje Billetes 20</th>
+        </tr>
+      </table>
+      <div id="salida"></div>
+    </section>
+  </body>
+    <script type="module">
+      import Cl_principal from "./principal.js";
+      new Cl_principal()
+    </script>
+</html>
