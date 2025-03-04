@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section id="Ventaform">
+      <h3>Datos del Cliente</h3>
+      <input type="text" id="Ventaform_inCliente" placeholder="Nombre del cliente"></input>
+      <input type="text" id="Ventaform_inFactura" placeholder="Nro de Factura"></input>
+      <input type="text" id="Ventaform_inCosto" placeholder="Costo"></input>
+      <input type="text" id="Ventaform_incntArticulos" placeholder="Cantidad de articulos"></input>
+      <button id="Ventaform_btProcesar">Procesar</button> 
+    </section>
+    <section id="mainForm">
+      <h3>Info de la tienda</h3>
+      <label>Inicial en caja</label>
+      <input id="mainForm_inicialCaja" placeholder="Inicial en caja"></input>
+      <label>Porcentaje de incremento</label>
+      <input id="mainForm_incremento"placeholder="Incremento"></input>
+      <button id="mainForm_btIniciar">Iniciar</button>
+      <table id="mainForm_tabla">
+        <tr>
+          <th>Nombre</th>
+          <th>Factura</th>
+          <th>Costo</th>
+          <th>Articulos</th>
+        </tr>
+      </table>
+      <div id="salida"></div>
+    </section>
+  </body>
+    <script type="module">
+      import Cl_principal from "./principal.js";
+      new Cl_principal()
+    </script>
+</html>
