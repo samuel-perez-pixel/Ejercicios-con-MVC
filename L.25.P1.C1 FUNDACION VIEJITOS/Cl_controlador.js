@@ -1,0 +1,19 @@
+export default class Cl_controlador{
+    constructor(modelo,vista){
+        this.modelo=modelo;
+        this.vista=vista;
+    }
+    procesarDonador(){
+        this.modelo.procesarDonador(this.vista.procesarDonador());
+        this.vista.reportarDonador(
+            this.modelo.totalDolares(),
+            this.modelo.totalBolivares(),
+            this.modelo.mejorDonador(),
+        );
+    }
+    iniciarFundacion(inicialBs,inicialDolares,tasaCambio){
+        this.modelo.inicialBs=inicialBs;
+        this.modelo.inicialDolares=inicialDolares;
+        this.modelo.tasaCambio=tasaCambio;
+    }
+}

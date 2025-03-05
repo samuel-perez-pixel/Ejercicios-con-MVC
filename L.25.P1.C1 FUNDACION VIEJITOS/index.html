@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section id="Donadorform">
+      <h3>Donador</h3>
+      <input type="text" id="Donadorform_inNombre" placeholder="Nombre"></input>
+      <input type="text" id="Donadorform_inBs" placeholder="Bolivares"></input>
+      <input type="text" id="Donadorform_inDolares" placeholder="Dolares"></input>
+      <button id="Donadorform_btProcesar">Procesar</button> 
+    </section>
+    <section id="mainForm">
+      <h3>Info de la Fundacion</h3>
+      <label>Inical en Bolivares</label>
+      <input id="mainForm_inicialBs" placeholder="Inicial Bolivares"></input>
+      <label>Inical en Dolares</label>
+      <input id="mainForm_inicialDolares"placeholder="Inicial Dolares"></input>
+      <label>Tasa de cambio</label>
+      <input id="mainForm_tasaCambio"placeholder="Tasa de cambio"></input>
+      <button id="mainForm_btIniciar">Iniciar</button>
+      <table id="mainForm_tabla">
+        <tr>
+          <th>Nombre</th>
+          <th>Bolivares</th>
+          <th>Dolares</th>
+        </tr>
+      </table>
+      <div id="salida"></div>
+    </section>
+  </body>
+    <script type="module">
+      import Cl_principal from "./principal.js";
+      new Cl_principal()
+    </script>
+</html>
